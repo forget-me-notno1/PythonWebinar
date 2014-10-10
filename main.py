@@ -2,6 +2,8 @@ import random
 
 def main():
     for i in range(128):
-        print(random.randrange(0, 1024))
+        r = random.randrange(0, 1024)
+        if r % 5 == 0:
+            print(r)
 
 main()
